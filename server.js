@@ -32,6 +32,19 @@ app.use(express.json());
 app.use('/api/v1', authRoutes);
 app.use('/api/v1', studentRoutes);
 
+//global erro handler
+app.use((err,req,res,next)=>{
+  console.log('global error handler running')
+  console.log(err)
+  res.status(err.statusCode).json({
+    message : err.message ,
+    stack : err.stack
+  })
+})
 app.listen(5000, () => {
   console.log('server is running');
 });
+
+//where i place my global error handler 
+
+//condition => jab mujhe controller main error milege => catch(error) => next(error)
