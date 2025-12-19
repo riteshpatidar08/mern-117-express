@@ -4,7 +4,7 @@ import { getStudent } from '../controllers/studentController.js';
 import verifyToken from '../middleware/verfiyToken.js';
 const router = express.Router() ;
 
-router.get('/student' , verifyToken ,getStudent)
+router.get('/student' ,getStudent)
 
 export default router
 

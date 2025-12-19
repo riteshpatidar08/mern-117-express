@@ -66,3 +66,9 @@ export const login = (req,res , next)=> {
 
 
 //controller => khudse error banaoge => catch block => next(error) => global handler response ui
+
+
+//node internal as => setImmediate , process.nexttick
+
+
+// password hashing => register => db plain password database => ritesh@123 =>42434jhreoweriedfldafjdhf0rw9r

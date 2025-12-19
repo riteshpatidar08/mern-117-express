@@ -39,3 +39,9 @@ export default verifyToken;
 
 
 //STUDENT MODEL => register one student in the db ;
+
+
+//node kya hain
+//node main event loop kya hota 
+//node single threaded 
+//

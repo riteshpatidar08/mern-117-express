@@ -1,3 +1,5 @@
 export const getStudent = (req,res) => {
-res.send("student data")
+res.json({
+    data : "student data"
+})
 }
