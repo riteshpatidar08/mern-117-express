@@ -19,7 +19,8 @@
       fetch('http://localhost:5000/api/v1/login', {
         method: 'POST',
         headers : {
-    "Content-Type" : "application/json"
+    "Content-Type" : "application/json",
+    "Authorization" :"Bearer ldfsjldskjfljflkdjflksj"
         },
         body: JSON.stringify({
           email: 'ritesh@gmail.com',
@@ -38,3 +39,45 @@ https://facebook.com port => http://localhost:5501 /ui => http://localhost:5000
 //cors error //NOTE cors error milega to wo kaha se shi hoga backend => //ui
 deploy => grras.com //request url //back deploy => grrasbackend.com //backend =>
 url [grass.com , grras1.com]
+
+
+//collection => uske sare process hote hain => 
+
+db.order.aggregate([stage1])
+
+$match  projection =>  find({}, {_id : 0 , name : 1})
+
+dashboard => analytics => total aaj k order / total mahine / total student 
+//maine abhi kitne order place kiya hain
+
+
+group => totalORder  // kis k according jaha par department id
+
+//NOTE jaha par department ki value it hain , usne kitne order kiye hain
+
+
+db.collectionName.aggregate([stage1 => stage2 => stage3])
+//kitne amout ka wo order place kar chuka hain 
+
+each document processs hoga => each document price * quanttiy + 
+
+
+<!-- $match => {$match : {keyNameofDoucment : value}} filter -->
+<!-- $group : {_id  : fieldName , {$}} total sales , total orders , totalorderamoutperuser -->
+<!-- $project => which keys are visible in the output document ; -->
+
+//NOTE totalSales / totalOrderPerPerson / totalOrderamountPerson 
+
+//NOTE => $lookup $unwind , $limit , $sort , $date : 
+
+ek dashboard design karta isme  dashboard kaise 
+
+<!-- 
+total product => model products => 20 documents => group : {$sum : 1} -->
+<!-- jo order delivered unko calculate the count -->
+
+<!-- top selling items ? -->
+
+
+<!-- item => 2  doucment 1  items => [] items.product_id X  -->
+<!-- unwind => jitne items hone 2 => 2 documnet => items : {} , item : {} -->
